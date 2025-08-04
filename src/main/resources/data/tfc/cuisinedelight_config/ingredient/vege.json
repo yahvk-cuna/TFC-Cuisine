@@ -1,0 +1,218 @@
+{
+  "entries": [
+    {
+      "type": "VEG",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/potato"
+        }
+      ],
+      "max_time": 360,
+      "min_time": 180,
+      "nutrition": 8,
+      "overcook_penalty": 0.3,
+      "raw_penalty": 0.5,
+      "size": 1,
+      "stir_time": 60
+    },
+    {
+      "type": "CARB",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/cattail_root"
+        },
+        {
+          "item": "tfc:food/taro_root"
+        }
+      ],
+      "max_time": 360,
+      "min_time": 180,
+      "nutrition": 8,
+      "overcook_penalty": 0.3,
+      "raw_penalty": 0.5,
+      "size": 1,
+      "stir_time": 60
+    },
+    {
+      "type": "VEG",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/beet"
+        },
+        {
+          "item": "tfc:food/carrot"
+        },
+        {
+          "item": "tfc:food/garlic"
+        },
+        {
+          "item": "tfc:food/green_bean"
+        },
+        {
+          "item": "tfc:food/green_bell_pepper"
+        },
+        {
+          "item": "tfc:food/red_bell_pepper"
+        },
+        {
+          "item": "tfc:food/yellow_bell_pepper"
+        },
+        {
+          "item": "tfc:food/soybean"
+        },
+        {
+          "item": "tfc:food/squash"
+        }
+      ],
+      "max_time": 360,
+      "min_time": 240,
+      "nutrition": 5,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.2,
+      "size": 1,
+      "stir_time": 60
+    },
+    {
+      "type": "VEG",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:plant/giant_kelp_flower"
+        },
+        {
+          "item": "tfc:food/fresh_seaweed"
+        }
+      ],
+      "max_time": 180,
+      "min_time": 120,
+      "nutrition": 3,
+      "overcook_penalty": 0.3,
+      "raw_penalty": 0.3,
+      "size": 1,
+      "stir_time": 60
+    },
+    {
+      "type": "VEG",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/dried_seaweed"
+        },
+        {
+          "item": "tfc:food/dried_kelp"
+        }
+      ],
+      "max_time": 120,
+      "min_time": 0,
+      "nutrition": 3,
+      "overcook_penalty": 0.3,
+      "raw_penalty": 0,
+      "size": 1,
+      "stir_time": 60
+    },
+    {
+      "type": "VEG",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/onion"
+        },
+        {
+          "item": "tfc:food/cabbage"
+        },
+        {
+          "item": "tfc:food/tomato"
+        },
+        {
+          "item": "tfc:food/pumpkin_chunks"
+        }
+      ],
+      "max_time": 360,
+      "min_time": 0,
+      "nutrition": 5,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.0,
+      "size": 1,
+      "stir_time": 60
+    },
+    {
+      "type": "VEG",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/banana"
+        },
+        {
+          "item": "tfc:food/cherry"
+        },
+        {
+          "item": "tfc:food/green_apple"
+        },
+        {
+          "item": "tfc:food/lemon"
+        },
+        {
+          "item": "tfc:food/olive"
+        },
+        {
+          "item": "tfc:food/orange"
+        },
+        {
+          "item": "tfc:food/peach"
+        },
+        {
+          "item": "tfc:food/plum"
+        },
+        {
+          "item": "tfc:food/red_apple"
+        },
+        {
+          "item": "tfc:food/melon_slice"
+        },
+        {
+          "item": "tfc:food/blackberry"
+        },
+        {
+          "item": "tfc:food/blueberry"
+        },
+        {
+          "item": "tfc:food/bunchberry"
+        },
+        {
+          "item": "tfc:food/cloudberry"
+        },
+        {
+          "item": "tfc:food/cranberry"
+        },
+        {
+          "item": "tfc:food/elderberry"
+        },
+        {
+          "item": "tfc:food/gooseberry"
+        },
+        {
+          "item": "tfc:food/raspberry"
+        },
+        {
+          "item": "tfc:food/snowberry"
+        },
+        {
+          "item": "tfc:food/strawberry"
+        },
+        {
+          "item": "tfc:food/wintergreen_berry"
+        }
+      ],
+      "max_time": 80,
+      "min_time": 0,
+      "nutrition": 4,
+      "overcook_penalty": 0.3,
+      "raw_penalty": 0.0,
+      "size": 1,
+      "stir_time": 60
+    }
+  ]
+}

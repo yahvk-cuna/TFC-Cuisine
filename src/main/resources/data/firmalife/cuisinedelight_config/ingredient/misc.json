@@ -1,0 +1,23 @@
+{
+  "entries": [
+    {
+      "type": "NONE",
+      "effects": [],
+      "ingredient": [
+        {
+          "tag": "firmalife:foods/cheeses"
+        },
+        {
+          "item": "firmalife:food/shredded_cheese"
+        }
+      ],
+      "max_time": 300,
+      "min_time": 0,
+      "nutrition": 1,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.0,
+      "size": 1,
+      "stir_time": 80
+    }
+  ]
+}

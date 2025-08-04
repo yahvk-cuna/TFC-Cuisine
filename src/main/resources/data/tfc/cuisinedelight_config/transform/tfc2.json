@@ -1,0 +1,16 @@
+{
+  "itemTransform": {
+    "minecraft:egg": {
+      "next": "tfc:food/cooked_egg",
+      "stage": "COOKED"
+    },
+    "tfc:food/rice_grain": {
+      "next": "tfc:food/cooked_rice",
+      "stage": "COOKED"
+    },
+    "tfc:plant/giant_kelp_flower": {
+      "next": "tfc:food/dried_kelp",
+      "stage": "COOKED"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "tfc:damage_inputs_shaped_crafting",
+  "recipe": {
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "S",
+      "P"
+    ],
+    "key": {
+      "S": {
+        "tag": "tfc:saws"
+      },
+      "P": {
+        "tag": "minecraft:planks"
+      }
+    },
+    "result": {
+      "item": "cuisinedelight:plate",
+      "count": 16
+    }
+  }
+}

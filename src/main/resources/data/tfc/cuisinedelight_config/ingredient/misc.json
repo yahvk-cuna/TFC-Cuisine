@@ -1,0 +1,55 @@
+{
+  "entries": [
+    {
+      "type": "CARB",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/rice_grain"
+        },
+        {
+          "tag": "tfc:foods/dough"
+        }
+      ],
+      "max_time": 360,
+      "min_time": 300,
+      "nutrition": 8,
+      "overcook_penalty": 0.5,
+      "raw_penalty": 0.7,
+      "size": 1,
+      "stir_time": 80
+    },
+    {
+      "type": "CARB",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/cooked_rice"
+        }
+      ],
+      "max_time": 240,
+      "min_time": 0,
+      "nutrition": 8,
+      "overcook_penalty": 0.5,
+      "raw_penalty": 0,
+      "size": 1,
+      "stir_time": 80
+    },
+    {
+      "type": "NONE",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:powder/salt"
+        }
+      ],
+      "max_time": 300,
+      "min_time": 0,
+      "nutrition": 1,
+      "overcook_penalty": 0.0,
+      "raw_penalty": 0.0,
+      "size": 1,
+      "stir_time": 80
+    }
+  ]
+}

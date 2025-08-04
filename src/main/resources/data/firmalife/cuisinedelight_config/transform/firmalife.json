@@ -1,0 +1,12 @@
+{
+  "itemTransform": {
+    "firmalife:food/bacon": {
+      "next": "firmalife:food/cooked_bacon",
+      "stage": "COOKED"
+    },
+    "firmalife:food/masa": {
+      "next": "firmalife:food/corn_tortilla",
+      "stage": "COOKED"
+    }
+  }
+}

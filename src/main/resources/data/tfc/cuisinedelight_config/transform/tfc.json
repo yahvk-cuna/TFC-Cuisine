@@ -1,0 +1,148 @@
+{
+  "itemTransform": {
+    "tfc:food/pheasant": {
+      "next": "tfc:food/cooked_pheasant",
+      "stage": "COOKED"
+    },
+    "tfc:food/chicken": {
+      "next": "tfc:food/cooked_chicken",
+      "stage": "COOKED"
+    },
+    "tfc:food/calamari": {
+      "next": "tfc:food/cooked_calamari",
+      "stage": "COOKED"
+    },
+    "tfc:food/cod": {
+      "next": "tfc:food/cooked_cod",
+      "stage": "COOKED"
+    },
+    "tfc:food/horse_meat": {
+      "next": "tfc:food/cooked_horse_meat",
+      "stage": "COOKED"
+    },
+    "tfc:food/salmon": {
+      "next": "tfc:food/cooked_salmon",
+      "stage": "COOKED"
+    },
+    "tfc:food/duck": {
+      "next": "tfc:food/cooked_duck",
+      "stage": "COOKED"
+    },
+    "tfc:food/grouse": {
+      "next": "tfc:food/cooked_grouse",
+      "stage": "COOKED"
+    },
+    "tfc:food/chevon": {
+      "next": "tfc:food/cooked_chevon",
+      "stage": "COOKED"
+    },
+    "tfc:food/camelidae": {
+      "next": "tfc:food/cooked_camelidae",
+      "stage": "COOKED"
+    },
+    "tfc:food/beef": {
+      "next": "tfc:food/cooked_beef",
+      "stage": "COOKED"
+    },
+    "tfc:food/bear": {
+      "next": "tfc:food/cooked_bear",
+      "stage": "COOKED"
+    },
+    "tfc:food/fox": {
+      "next": "tfc:food/cooked_fox",
+      "stage": "COOKED"
+    },
+    "tfc:food/smallmouth_bass": {
+      "next": "tfc:food/cooked_smallmouth_bass",
+      "stage": "COOKED"
+    },
+    "tfc:food/bluegill": {
+      "next": "tfc:food/cooked_bluegill",
+      "stage": "COOKED"
+    },
+    "tfc:food/crappie": {
+      "next": "tfc:food/cooked_crappie",
+      "stage": "COOKED"
+    },
+    "tfc:food/fresh_seaweed": {
+      "next": "tfc:food/dried_seaweed",
+      "stage": "COOKED"
+    },
+    "tfc:food/frog_legs": {
+      "next": "tfc:food/cooked_frog_legs",
+      "stage": "COOKED"
+    },
+    "tfc:food/mutton": {
+      "next": "tfc:food/cooked_mutton",
+      "stage": "COOKED"
+    },
+    "tfc:food/quail": {
+      "next": "tfc:food/cooked_quail",
+      "stage": "COOKED"
+    },
+    "tfc:food/turtle": {
+      "next": "tfc:food/cooked_turtle",
+      "stage": "COOKED"
+    },
+    "tfc:food/largemouth_bass": {
+      "next": "tfc:food/cooked_largemouth_bass",
+      "stage": "COOKED"
+    },
+    "tfc:food/rainbow_trout": {
+      "next": "tfc:food/cooked_rainbow_trout",
+      "stage": "COOKED"
+    },
+    "tfc:food/peafowl": {
+      "next": "tfc:food/cooked_peafowl",
+      "stage": "COOKED"
+    },
+    "tfc:food/lake_trout": {
+      "next": "tfc:food/cooked_lake_trout",
+      "stage": "COOKED"
+    },
+    "tfc:food/shellfish": {
+      "next": "tfc:food/cooked_shellfish",
+      "stage": "COOKED"
+    },
+    "tfc:food/pork": {
+      "next": "tfc:food/cooked_pork",
+      "stage": "COOKED"
+    },
+    "tfc:food/turkey": {
+      "next": "tfc:food/cooked_turkey",
+      "stage": "COOKED"
+    },
+    "tfc:food/rabbit": {
+      "next": "tfc:food/cooked_rabbit",
+      "stage": "COOKED"
+    },
+    "tfc:food/hyena": {
+      "next": "tfc:food/cooked_hyena",
+      "stage": "COOKED"
+    },
+    "tfc:food/venison": {
+      "next": "tfc:food/cooked_venison",
+      "stage": "COOKED"
+    },
+    "tfc:food/wolf": {
+      "next": "tfc:food/cooked_wolf",
+      "stage": "COOKED"
+    },
+    "tfc:food/tropical_fish": {
+      "next": "tfc:food/cooked_tropical_fish",
+      "stage": "COOKED"
+    },
+    "tfc:food/gran_feline": {
+      "next": "tfc:food/cooked_gran_feline",
+      "stage": "COOKED"
+    },
+    "tfc:food/potato": {
+      "next": "tfc:food/baked_potato",
+      "stage": "COOKED"
+    },
+    "tfc:food/rice_grain": {
+      "next": "tfc:food/cooked_rice",
+      "stage": "COOKED"
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "entries": [
+    {
+      "type": "MEAT",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/pork"
+        },
+        {
+          "item": "tfc:food/beef"
+        },
+        {
+          "item": "tfc:food/mutton"
+        },
+        {
+          "item": "tfc:food/bear"
+        },
+        {
+          "item": "tfc:food/horse_meat"
+        },
+        {
+          "item": "tfc:food/turtle"
+        },
+        {
+          "item": "tfc:food/venison"
+        },
+        {
+          "item": "tfc:food/wolf"
+        },
+        {
+          "item": "tfc:food/hyena"
+        },
+        {
+          "item": "tfc:food/chevon"
+        },
+        {
+          "item": "tfc:food/gran_feline"
+        },
+        {
+          "item": "tfc:food/camelidae"
+        }
+      ],
+      "max_time": 240,
+      "min_time": 180,
+      "nutrition": 10,
+      "overcook_penalty": 0.5,
+      "raw_penalty": 0.5,
+      "size": 1,
+      "stir_time": 80
+    },
+
+    {
+      "type": "MEAT",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/chicken"
+        },
+        {
+          "item": "tfc:food/quail"
+        },
+        {
+          "item": "tfc:food/pheasant"
+        },
+        {
+          "item": "tfc:food/grouse"
+        },
+        {
+          "item": "tfc:food/turkey"
+        },
+        {
+          "item": "tfc:food/peafowl"
+        },
+        {
+          "item": "tfc:food/rabbit"
+        },
+        {
+          "item": "tfc:food/fox"
+        },
+        {
+          "item": "tfc:food/duck"
+        }
+      ],
+      "max_time": 240,
+      "min_time": 180,
+      "nutrition": 8,
+      "overcook_penalty": 0.3,
+      "raw_penalty": 1.0,
+      "size": 1,
+      "stir_time": 80
+    },
+    {
+      "type": "MEAT",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/frog_legs"
+        }
+      ],
+      "max_time": 120,
+      "min_time": 60,
+      "nutrition": 12,
+      "overcook_penalty": 0.5,
+      "raw_penalty": 0.5,
+      "size": 1,
+      "stir_time": 40
+    },
+    {
+      "type": "SEAFOOD",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "tfc:food/cod"
+        },
+        {
+          "item": "tfc:food/tropical_fish"
+        },
+        {
+          "item": "tfc:food/calamari"
+        },
+        {
+          "item": "tfc:food/bluegill"
+        },
+        {
+          "item": "tfc:food/crappie"
+        },
+        {
+          "item": "tfc:food/lake_trout"
+        },
+        {
+          "item": "tfc:food/largemouth_bass"
+        },
+        {
+          "item": "tfc:food/shellfish"
+        },
+        {
+          "item": "tfc:food/rainbow_trout"
+        },
+        {
+          "item": "tfc:food/salmon"
+        },
+        {
+          "item": "tfc:food/smallmouth_bass"
+        }
+
+      ],
+      "max_time": 120,
+      "min_time": 60,
+      "nutrition": 12,
+      "overcook_penalty": 0.5,
+      "raw_penalty": 0.5,
+      "size": 1,
+      "stir_time": 40
+    }
+  ]
+}

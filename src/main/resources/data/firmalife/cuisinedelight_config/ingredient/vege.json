@@ -1,0 +1,51 @@
+{
+  "entries": [
+    {
+      "type": "VEG",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "firmalife:food/tomato_sauce"
+        },
+        {
+          "item": "firmalife:food/salsa"
+        }
+      ],
+      "max_time": 360,
+      "min_time": 0,
+      "nutrition": 5,
+      "overcook_penalty": 0.2,
+      "raw_penalty": 0.0,
+      "size": 1,
+      "stir_time": 60
+    },
+    {
+      "type": "VEG",
+      "effects": [],
+      "ingredient": [
+        {
+          "item": "firmalife:food/fig"
+        },
+        {
+          "item": "firmalife:food/pineapple"
+        },
+        {
+          "item": "firmalife:food/red_grapes"
+        },
+        {
+          "item": "firmalife:food/white_grapes"
+        },
+        {
+          "item": "firmalife:food/nightshade_berry"
+        }
+      ],
+      "max_time": 80,
+      "min_time": 0,
+      "nutrition": 4,
+      "overcook_penalty": 0.3,
+      "raw_penalty": 0.0,
+      "size": 1,
+      "stir_time": 60
+    }
+  ]
+}
