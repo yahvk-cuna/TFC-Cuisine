@@ -6,7 +6,9 @@
   "refmap": "tfc_cuisine.refmap.json",
   "mixins": [
     "BaseCuisineRecipeMixin",
+    "CharcoalForgeBlockEntityMixin",
     "CuisineSkilletBlockMixin",
+    "FirepitBlockEntityMixin",
     "HeatableBlockEntityMixin"
   ],
   "client": [

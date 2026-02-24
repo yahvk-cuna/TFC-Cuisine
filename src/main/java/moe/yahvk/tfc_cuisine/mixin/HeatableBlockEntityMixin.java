@@ -1,5 +1,6 @@
 package moe.yahvk.tfc_cuisine.mixin;
 
+import moe.yahvk.tfc_cuisine.HasTemperature;
 import moe.yahvk.tfc_cuisine.config.CommonConfig;
 import net.dries007.tfc.common.capabilities.heat.HeatCapability;
 import net.minecraft.core.BlockPos;
@@ -24,10 +25,9 @@ public interface HeatableBlockEntityMixin {
             if (below != null) {
                 var heat = below.getCapability(HeatCapability.BLOCK_CAPABILITY).resolve();
                 if (heat.isPresent()) {
-
-                    if (heat.get().getTemperature() > CommonConfig.heatTempture.get()) {
-                        return true;
-                    }
+                    return (heat.get().getTemperature() > CommonConfig.heatTempture.get());
+                } else if (below instanceof HasTemperature temperature) {
+                    return temperature.tfc_cuisine$getTemperature() > CommonConfig.heatTempture.get();
                 }
             }
         }
