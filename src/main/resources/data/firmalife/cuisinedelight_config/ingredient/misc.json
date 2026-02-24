@@ -9,6 +9,9 @@
         },
         {
           "item": "firmalife:food/shredded_cheese"
+        },
+        {
+          "tag": "firmalife:foods/chocolate"
         }
       ],
       "max_time": 300,
