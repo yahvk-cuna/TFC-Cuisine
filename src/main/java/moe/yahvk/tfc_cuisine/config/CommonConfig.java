@@ -30,12 +30,12 @@ public class CommonConfig {
                 .defineInRange("hunger", 4, 0, Integer.MAX_VALUE);
 
         nutritionMultiplierSpec = builder
-                .comment("The multiplier for nutrition values of cuisine delight foods.")
+                .comment("The multiplier for nutrition values of cuisine delight foods.\nSupport variables: ingredientCount, originServeSize, serveSize.\nBy default, the final nutritional value will be close to the sum of the nutritional values when there are few ingredients, and tend to be a constant value when there are many ingredients.")
                 .define("nutritionMultiplier", "(-3.55 * E^(-0.3 * ($ingredientCount - 1)) + 4.5) / $ingredientCount",
                         s -> !(new ExpressionParser((String) s).hasError()));
 
         serveSizeSpec = builder
-                .comment("The serve size for cuisine delight foods. Set to \"$originServeSize\" to use the original cuisine delight behavior.")
+                .comment("The serve size for cuisine delight foods. Set to \"$originServeSize\" to use the original cuisine delight behavior.\nSupport variables: ingredientCount, originServeSize.\nBy default, the serving size is the same as that for TFC soup.")
                 .define("serveSize", "floor($ingredientCount / 2) + 1",
                         s -> !(new ExpressionParser((String) s).hasError()));
 
