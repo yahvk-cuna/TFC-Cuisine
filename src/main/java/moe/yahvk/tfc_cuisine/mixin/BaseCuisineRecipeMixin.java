@@ -32,7 +32,7 @@ public abstract class BaseCuisineRecipeMixin {
             return;
         }
 
-        float water = 0, saturation = 2;
+        float water = 0, saturation = 0, hungerSum = 0;
         float[] nutrition = new float[Nutrient.TOTAL];
         final List<ItemStack> ingredients = new ArrayList<>();
         int ingredientCount = 0;
@@ -58,38 +58,59 @@ public abstract class BaseCuisineRecipeMixin {
                     isRot = true;
                 }
 
-                water += entry.overcooked() ? 0 : foodIngredient.getData().water() * ingredient.getCount();
-                saturation += foodIngredient.getData().saturation() * ingredient.getCount() * score;
+                var vars = new HashMap<String, Double>();
+                vars.put("saturation", (double) foodIngredient.getData().saturation());
+                vars.put("water", (double) foodIngredient.getData().water());
+                vars.put("count", (double) ingredient.getCount());
+                vars.put("score", (double) score);
+                if (config != null) {
+                    vars.put("raw_penalty", (double) config.raw_penalty);
+                    vars.put("overcook_penalty", (double) config.overcook_penalty);
+                } else {
+                    vars.put("raw_penalty", 0.0);
+                    vars.put("overcook_penalty", 0.0);
+                }
+                vars.put("raw", entry.raw() ? 1.0 : 0.0);
+                vars.put("overcooked", entry.overcooked() ? 1.0 : 0.0);
+                vars.put("burnt", entry.burnt() ? 1.0 : 0.0);
+
+                water += (float) CommonConfig.waterPreIngredient.eval(vars);
+                saturation += (float) CommonConfig.saturationPreIngredient.eval(vars);
 
                 for (Nutrient nutrient : Nutrient.VALUES) {
                     nutrition[nutrient.ordinal()] += foodIngredient.getData().nutrient(nutrient) * ingredient.getCount() * score;
                 }
                 ingredientCount += ingredient.getCount();
+                hungerSum += foodIngredient.getData().hunger() * ingredient.getCount();
             }
         }
 
         var vars = new HashMap<String, Double>();
         vars.put("originServeSize", (double) food.size);
         vars.put("ingredientCount", (double) ingredientCount);
+        vars.put("totalSaturation", (double) saturation);
 
         food.size = (int) CommonConfig.serveSize.eval(vars);
         BaseFoodItem.setData(stack, food);
         vars.put("serveSize", (double) food.size);
 
         if (!ingredients.isEmpty()) {
-            float multiplier = (float) CommonConfig.nutritionMultiplier.eval(vars);
-            TFCCuisine.LOGGER.info("Multiplier: {} ingredientCount: {} food size: {}", multiplier, ingredientCount, food.size);
+            // TFCCuisine.LOGGER.info("Multiplier: {} ingredientCount: {} food size: {}", multiplier, ingredientCount, food.size);
 
             for (Nutrient nutrient : Nutrient.VALUES) {
-                nutrition[nutrient.ordinal()] *= multiplier;
+                vars.put("nutrition", (double) nutrition[nutrient.ordinal()]);
+                vars.put("nutritionType", (double) nutrient.ordinal());
+                nutrition[nutrient.ordinal()] = (float) CommonConfig.nutritionPostProcessing.eval(vars);
             }
 
             if (newFood instanceof FoodHandler.Dynamic handler) {
-                int hunger = food.toFoodData().getNutrition();
-                if (CommonConfig.overrideHunger.get()) {
-                    hunger = CommonConfig.hunger.get();
-                }
-                handler.setFood(FoodData.create(hunger, water * multiplier, saturation * multiplier, nutrition, CommonConfig.decayModifier.get()));
+                vars.put("hungerSum", (double) hungerSum);
+                vars.put("originHunger", (double) food.toFoodData().getNutrition());
+                vars.put("totalWater", (double) water);
+                int hunger = (int) CommonConfig.hunger.eval(vars);
+                float saturationFinal = (float) CommonConfig.saturationPostProcessing.eval(vars);
+                float waterFinal = (float) CommonConfig.waterPostProcessing.eval(vars);
+                handler.setFood(FoodData.create(hunger, waterFinal, saturationFinal, nutrition, CommonConfig.decayModifier.get()));
                 handler.setIngredients(ingredients);
                 handler.setCreationDate(isRot ? Long.MIN_VALUE : FoodCapability.getRoundedCreationDate());
             }
